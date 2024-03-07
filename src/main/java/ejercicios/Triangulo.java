@@ -3,13 +3,10 @@ package ejercicios;
 import static ejercicios.SetDeTenis.evaluar;
 import java.util.Scanner;
 
-/**
- *
- * @author danielsanchez
- */
+
 public class Triangulo {
     public static String evaluar(double a, double b, double c) {
-        // TODO: Coloca aquí el código del ejercicio 7: Triángulos
+        
         return "";
     }
     
