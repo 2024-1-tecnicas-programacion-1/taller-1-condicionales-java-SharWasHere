@@ -6,28 +6,19 @@ import java.util.Scanner;
 public class IMC {
 
     public static String evaluar(int peso, double estatura, int edad) {
-        Scanner sc = new Scanner(System.in);
-        double peso = sc.nextDouble();
-        double altura = sc.nextDouble();
-        double imc = peso / Math.pow(altura, 2);
-        int edad = sc.nextInt();
+        // TODO: Coloca aquí el código del ejercicio 8: Índice de masa corporal
+        double imc = peso / Math.pow(estatura, 2);
 
         if (imc < 22.0 && edad < 45) {
-            System.out.println("bajo");
-        }
-        if (imc < 22.0 && edad >= 45) {
-            System.out.println("medio");
-        }
-        if (imc >= 22.0 && edad < 45);
-        {
-            System.out.println("medio");
-        }
-        else {
-                System.out.println("alto");
-                }
+            return "bajo";
+        } else if (imc < 22.0 && edad >= 45) {
+            return "medio";
+        } else if (imc >= 22.0 && edad < 45) {
+            return "medio";
+        } else {
 
-    
-        return "";
+            return "alto";
+        }
     }
 
     public static void main(String[] args) {
@@ -38,7 +29,7 @@ public class IMC {
         double estatura = lector.nextDouble();
         System.out.print("Edad:");
         int edad = lector.nextInt();
-
+        
         String respuesta = evaluar(peso, estatura, edad);
         System.out.println(respuesta);
     }
