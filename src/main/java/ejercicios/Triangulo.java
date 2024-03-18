@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class Triangulo {
 
     public static String evaluar(double a, double b, double c) {
+        if (a <= 0 || b <= 0 || c <= 0) {
+            return "No es un triángulo válido";
+        }
         if (a + b > c && c + a > b && b + c > a) {
             if (a == b && b == c) {
                 return "El triángulo es equilátero";

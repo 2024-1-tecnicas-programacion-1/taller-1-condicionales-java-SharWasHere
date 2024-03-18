@@ -9,7 +9,9 @@ public class IMC {
         // TODO: Coloca aquí el código del ejercicio 8: Índice de masa corporal
         double imc = peso / Math.pow(estatura, 2);
 
-        if (imc < 22.0 && edad < 45) {
+        if (peso < 0) {
+            return "ingrese un número de peso válido";
+        } else if (imc < 22.0 && edad < 45) {
             return "bajo";
         } else if (imc < 22.0 && edad >= 45) {
             return "medio";
@@ -29,7 +31,7 @@ public class IMC {
         double estatura = lector.nextDouble();
         System.out.print("Edad:");
         int edad = lector.nextInt();
-        
+
         String respuesta = evaluar(peso, estatura, edad);
         System.out.println(respuesta);
     }

@@ -2,6 +2,7 @@
 package ejercicios;
 
 import static ejercicios.SetDeTenis.evaluar;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ordenamiento {
